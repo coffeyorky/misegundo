@@ -1,48 +1,55 @@
-/* index */
 * {
   margin: 0px;
   padding: 0px;
   background-color: rgb(31, 31, 34);
   color: white;
 }
+
 body {
   background-color: rgb(31, 31, 34);
 }
+
 .logo {
   width: 444px;
   height: 92px;
   display: block;
 }
+
 /* menu */
 .inicio {
   display: block;
   position: sticky;
   top: 0;
 }
+
 .in {
   background-color: rgb(31, 31, 34);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
+
 .menu {
   display: flex;
   height: 50px;
   align-items: center;
   font-family: "Roboto", sans-serif;
 }
+
 ul {
   list-style: none;
 }
 ul li a {
   margin: 10px;
 }
+
 .pad {
   margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .backim {
   background-image: url(../img/bordo.jpg);
   transition: all 1s;
@@ -50,14 +57,15 @@ ul li a {
 .backim:hover {
   transform: skewX(20deg);
 }
+
 /* menu */
 /* menu mobile */
 .menuMobile {
   display: none;
 }
+
 /* menu mobile */
 /* body */
-
 h2 {
   color: red;
   background-color: black;
@@ -69,10 +77,9 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.3fr 0.3fr;
-  grid-template-areas:
-    "txt txt img"
-    "img2 img2 img2";
+  grid-template-areas: "txt txt img" "img2 img2 img2";
 }
+
 .uno {
   grid-area: txt;
   text-align: center;
@@ -81,19 +88,23 @@ h2 {
   margin: 30px;
   padding: 40px;
 }
+
 .ord {
   grid-area: img;
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .dos {
   border: 2px solid black;
   width: 240px;
   height: 240px;
 }
+
 .bordes {
   border: 2px solid black;
 }
+
 .moverCentro {
   grid-area: img2;
   padding: 10px;
@@ -103,11 +114,13 @@ h2 {
 
 .reducir {
   border: black 2px solid;
-  border-radius: 10% / 50%;
+  border-radius: 10%/50%;
 }
+
 .margenBox {
   margin: 20px;
 }
+
 .box {
   color: black;
   background-image: url(../img/tumblr_7dab5085af0cc870779a04f730744ea0_6016881e_2048.jpg);
@@ -117,6 +130,7 @@ h2 {
   margin: 20px;
   padding: 20px;
 }
+
 /* body */
 h3 {
   background-color: black;
@@ -125,10 +139,12 @@ h3 {
   font-family: "Roboto", sans-serif;
   margin: 20px;
 }
+
 .if {
   text-align: center;
   padding: 20px;
 }
+
 .orden {
   display: flex;
   justify-content: space-evenly;
@@ -143,6 +159,7 @@ section div {
   align-items: center;
   justify-content: center;
 }
+
 .guia {
   display: flex;
   flex-direction: row;
@@ -153,16 +170,17 @@ section div {
   padding: 20px;
   margin: 20px;
 }
+
 .dn {
   width: 260px;
 }
 
-.caja:hover {
-  transform: scale(1.1);
-}
 .caja {
   transition: all 1s;
   padding: 10px;
+}
+.caja:hover {
+  transform: scale(1.1);
 }
 
 a {
@@ -173,9 +191,11 @@ a {
 a:hover {
   color: rgb(92, 92, 92);
 }
+
 p {
   font-family: "Roboto", sans-serif;
 }
+
 footer {
   display: flex;
   background-color: black;
@@ -186,69 +206,7 @@ footer a {
   padding: 10px;
   background-color: black;
 }
-/* index */
-/*series*/
-.btn-cel {
-  color: aqua;
-  border-color: aqua;
-}
-.btn-cel:hover {
-  color: rgb(0, 0, 0) !important;
-  border-color: #001b27 !important;
-  background-color: #198492 !important;
-}
-.btn-dan {
-  color: red;
-  border-color: red;
-}
-.btn-dan:hover {
-  border-color: rgb(44, 0, 6) !important;
-  background-color: rgb(122, 8, 24) !important;
-}
-.btn-blk {
-  color: rgb(255, 255, 255);
-  border-color: black;
-}
-.btn-blk:hover {
-  border-color: black !important;
-  background-color: black !important;
-}
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-.mob {
-  margin: 5px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.accblk {
-  color: white;
-  background-color: rgb(31, 31, 34);
-}
 
-.lisblk {
-  color: rgb(226, 226, 226) !important;
-  background-color: rgb(31, 31, 34) !important;
-}
-.lisblk:hover {
-  color: rgb(184, 255, 188) !important;
-}
-.mrgno {
-  margin: 0;
-}
-.lishdn {
-  display: none;
-}
-.centro {
-  width: 100%;
-  height: 100%;
-}
-h1 {
-  font-family: "Roboto", sans-serif;
-}
 .colorear {
   color: white;
 }
@@ -272,382 +230,8 @@ h1 {
     color: white;
   }
 }
-.centrar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-.fondo {
-  background-image: url(../img/seriesim.jpg);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  font-size: 20px;
-  margin: 0;
-  padding: 140px;
-}
-.seccionCloneWars {
-  margin: 50px;
-  padding: 20px;
-}
-.seccionThebadb {
-  margin: 50px;
-  padding: 20px;
-}
-/* series */
-/* novedades */
-.btn-grn {
-  color: rgb(0, 165, 0);
-  border-color: rgb(0, 92, 0);
-}
-.btn-grn:hover {
-  border-color: rgb(10, 48, 0) !important;
-  background-color: rgb(17, 134, 17) !important;
-}
-.containerNovedades {
-  margin: 20px;
-  display: grid;
-  grid-template-rows: repeat(0.2fr, 13);
-  grid-template-columns: repeat(0.2fr, 3);
-  grid-template-areas:
-    "ando ando not"
-    "ando2 ando3 not"
-    "ando4 ando4 not"
-    "ando4 ando4 not"
-    "tbb tbb not"
-    "tbb2 tbb3 not"
-    "tbb4 tbb4 not"
-    "toj toj tw"
-    "toj2 toj3 tw"
-    "toj4 toj4 tw"
-    "mnd mnd tw"
-    "mnd2 mnd3 tw"
-    "mnd4 mnd4 tw";
-}
-.noticias {
-  grid-area: not;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
-  font-size: 18px;
-}
-.seccionAndor {
-  grid-area: ando;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.b {
-  margin: 10px;
-  padding: 10px;
-  grid-area: ando2;
-  width: 320px;
-  height: 170px;
-}
-.c {
-  grid-area: ando3;
-  margin: 10px;
-  padding: 10px;
-}
-.d {
-  grid-area: ando4;
-  padding: 30px;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.seccionBadBatch {
-  grid-area: tbb;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.tbbs {
-  margin: 10px;
-  padding: 10px;
-  grid-area: tbb2;
-  width: 320px;
-  height: 170px;
-}
-.txtt {
-  grid-area: tbb3;
-  margin: 10px;
-  padding: 10px;
-}
-.ifrm {
-  grid-area: tbb4;
-  margin: 20px;
-}
-.seccionTalesofjedi {
-  grid-area: toj;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.toj {
-  grid-area: toj2;
-  margin: 10px;
-  padding: 10px;
-}
-.tales {
-  grid-area: toj3;
-  margin: 10px;
-  padding: 10px;
-}
-.ofjedi {
-  grid-area: toj4;
-  margin: 20px;
-}
-.seccionThemandalorian {
-  grid-area: mnd;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.mando {
-  grid-area: mnd2;
-  margin: 10px;
-  padding: 10px;
-}
-.mnd {
-  grid-area: mnd3;
-  margin: 20px;
-}
-.mndifr {
-  grid-area: mnd4;
-}
-.twitt {
-  grid-area: tw;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-/* novedades */
-/* peliculas */
-.menuPeliculas {
-  background-color: black;
-  margin: 30px;
-}
-.amf {
-  margin: 40px;
-  padding: 10px 40px 10px;
-}
-.thePhantomMenace {
-  width: 900px;
-  height: 506px;
-}
-.res{
-  margin: 20px 30px 3px;
-  padding: 10px 40px 0;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.phantomMenace{
-  margin: 0 30px 10px;
-  padding: 0 40px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-/* peliculas */
-/* novelas */
-.car {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.novcar {
-  width: 1100px;
-  height: 786px;
-  margin: 20px;
-}
-.liscrsl {
-  background-color: transparent !important;
-}
-.guiaDeLectura {
-  margin: 20px;
-}
-/* novelas */
-/* videojuegos */
-.jds {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.deskopHide {
-  display: none;
-}
-.resumenVideojuegos {
-  text-align: center;
-  margin: 30px;
-  padding: 10px 50px 20px;
-}
-.juegosPrincipales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.margen {
-  margin: 20px;
-}
-.jdo {
-  border-radius: 40px;
-  width: 1000px;
-  height: 563px;
-}
-.roth {
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 18px;
-}
-.st {
-  width: 400px;
-  height: 225px;
-}
-/* videojuegos */
-/* lore */
-.lor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.gridLore {
-  margin: 20px;
-  display: grid;
-  grid-template-rows: repeat(0.3fr, 7);
-  grid-template-columns: 0.2fr 0.2fr 0.2fr;
-  grid-template-areas:
-    "bcd bdc bdc"
-    "bdat bdat2 noti"
-    "bdat bdat2 noti2"
-    "bdat3 bdat4 noti3"
-    "bdat3 bdat4 noti4"
-    "bdat5 bdat6 noti5"
-    "lid lid noti6";
-}
-.ttxt {
-  grid-area: noti;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-.notic {
-  grid-area: noti2;
-  margin: 10px;
-  padding: 10px;
-  font-size: 18px;
-}
-.answ {
-  grid-area: noti3;
-  margin: 20px;
-  padding: 20px;
-  font-size: 18px;
-}
-.jdls {
-  grid-area: noti4;
-  margin: 20px;
-  padding: 20px;
-  font-size: 18px;
-}
-.aclt {
-  grid-area: noti5;
-  margin: 20px;
-  padding: 20px;
-  font-size: 18px;
-}
-.ssv {
-  grid-area: noti6;
-  margin: 20px;
-  padding: 20px;
-  font-size: 18px;
-}
-.bcd {
-  grid-area: bcd;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-.sbo {
-  grid-area: bdat;
-  margin: 30px;
-}
-.cb {
-  grid-area: bdat2;
-  margin: 30px;
-}
-.tantiss {
-  grid-area: bdat3;
-  margin: 30px;
-}
-.qui {
-  grid-area: bdat4;
-  margin: 30px;
-}
-.drgn {
-  grid-area: bdat5;
-  margin: 30px;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.clns {
-  grid-area: bdat6;
-  margin: 30px;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.lis {
-  grid-area: lid;
-}
 
-.col {
-  color: white;
-  background-color: rgb(31, 31, 34);
-}
-.btn-cam {
-  color: #12477c;
-  border-color: #12477c;
-}
-.btn-cam:hover {
-  color: rgb(219, 219, 219) !important;
-  border-color: #061a2e !important;
-  background-color: #0d3966 !important;
-}
-.btn-red {
-  color: rgb(194, 32, 53);
-  border-color: rgb(194, 32, 53);
-}
-.btn-red:hover {
-  color: rgb(219, 219, 219) !important;
-  border-color: rgb(77, 8, 18) !important;
-  background-color: rgb(136, 24, 39) !important;
-}
-.btn-midas {
-  color: #ffbb00ee;
-  border-color: #ca7900ee;
-}
-.btn-midas:hover {
-  color: black !important;
-  border-color: #ca7900ee !important;
-  background-color: #ffbb00ee !important;
-}
-.btn-white {
-  color: white;
-  border-color: white;
-}
-.btn-white:hover {
-  color: black !important;
-  border-color: rgb(0, 0, 0) !important;
-  background-color: white !important;
-}
-/* lore */
+/* index */
 @media screen and (max-width: 576px) {
   /* index */
   .inicio {
@@ -681,9 +265,7 @@ h1 {
   .containerGrid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr;
-    grid-template-areas:
-      "txt txt"
-      "img img2";
+    grid-template-areas: "txt txt" "img img2";
   }
   .uno {
     text-align: center;
@@ -714,262 +296,7 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  /* indesx */
-  /* series */
-  .fondo {
-    margin: 0;
-    padding: 90px;
-    font-size: 15px;
-  }
-  .seccionCloneWars {
-    margin: 10px;
-  }
-  .mob {
-    display: none;
-  }
-  .lishdn {
-    display: block;
-  }
-  .clone {
-    width: 400px;
-    height: 225px;
-  }
-  .seccionThebadb {
-    margin: 10px;
-  }
-  .badbatchdos {
-    width: 400px;
-    height: 225px;
-  }
-  /* series */
-  /* novedades */
-  .containerNovedades {
-    grid-template-rows: repeat(0.2fr, 28);
-    grid-template-columns: 0.2fr;
-    grid-template-areas:
-      "not"
-      "not"
-      "not"
-      "not"
-      "not"
-      "not"
-      "not"
-      "ando"
-      "ando2"
-      "ando3"
-      "ando4"
-      "tbb"
-      "tbb2"
-      "tbb3"
-      "tbb4"
-      "toj"
-      "toj"
-      "toj2"
-      "toj3"
-      "toj4"
-      "toj4"
-      "mnd"
-      "mnd"
-      "mnd2"
-      "mnd3"
-      "mnd4"
-      "mnd4"
-      "tw";
-  }
-  .noticias{
-    margin: 5px;
-  }
-  .seccionBadBatch{
-    justify-content: center;
-  }
-  .seccionTalesofjedi{
-    justify-content: center;
-  }
-  .seccionThemandalorian{
-    justify-content: center;
-  }
-  .b {
-    margin: 5px;
-    padding: 10px;
-  }
-  .c {
-    grid-area: ando3;
-    margin: 5px;
-    padding: 10px;
-  }
-  .d {
-    grid-area: ando4;
-    padding: 30px;
-
-  }
-  .tbbs {
-    margin: 5px;
-    padding: 10px;
-  }
-  .txtt {
-    margin: 5px;
-    padding: 10px;
-  }
-  .ifrm {
-    margin: 10px;
-  }
- 
-  .toj {
-    margin: 5px;
-    padding: 10px;
-  }
-  .tales {
-    margin: 5px;
-    padding: 10px;
-  }
-  .ofjedi {
-    margin: 10px;
-  }
-  .mando {
-    margin: 5px;
-    padding: 10px;
-  }
-  .mnd {
-    margin: 5px;
-    padding: 10px;
-  }
-  .mndifr {
-    grid-area: mnd4;
-    margin: 5px;
-  }
-  .btn-grn{
-    font-size: 14px;
-  }
-  /* novedades */
-  /* peliculas */
-  .thePhantomMenace {
-    width: 400px;
-    height: 225px;
-    margin: 5px;
-  }
-  .phantomMenace{
-    margin: 1px;
-  }
-  .menuPeliculas {
-    margin: 5px;
-  }
-  .amf {
-    margin: 5px;
-  }
-  .res{
-    margin: 1px;
-  }
-  
-  /* peliculas */
-  /* novelas */
-  .novcar {
-    height: 400px;
-    margin: 0;
-    padding: 0;
-  }
-  .resumenLegends {
-    font-size: 15px;
-    margin: 0px;
-    padding: 80px;
-  }
-  /* novelas */
-  /* videojuegos */
-  .jdsur {
-    display: none;
-  }
-  .deskopHide {
-    display: block;
-    width: 100%;
-  }
-  .resumenVideojuegos {
-    margin: 5px;
-    padding: 15px;
-  }
-  .jdo {
-    width: 350px;
-    height: 197px;
-  }
-  .roth {
-    margin: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .juegosPrincipales {
-   margin: 20px;
-  }
-  .margen {
-    margin: 20px;
-  }
-
-  .st {
-    width: 350px;
-    height: 197px;
-  }
-  /* videojuegos */
-  /* lore */
-  .btn-cam {
-    font-size: 14px;
-  }
-  .btn-red {
-    font-size: 14px;
-  }
-  .btn-midas {
-    font-size: 14px;
-  }
-  .btn-white {
-    font-size: 14px;
-  }
-  .gridLore {
-    justify-content: center;
-    grid-template-rows: repeat(0.3fr, 14);
-    grid-template-columns: 0.2fr;
-    grid-template-areas:
-      "noti"
-      "noti2"
-      "noti3"
-      "noti4"
-      "noti5"
-      "noti6"
-      "bcd"
-      "bdat"
-      "bdat2"
-      "bdat3"
-      "bdat4"
-      "bdat5"
-      "bdat6"
-      "lid";
-  }
-  .sbo {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .cb {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .tantiss {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .qui {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .drgn {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .clns {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  /* lore */
 }
+/* indesx */
+
+/*# sourceMappingURL=style.css.map */
