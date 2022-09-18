@@ -1,0 +1,292 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: $color-prncipal;
+    color: white;
+  }
+  body {
+    background-color: $color-prncipal;
+  }
+  .logo {
+    width: 444px;
+    height: 92px;
+    display: block;
+  }
+  /* menu */
+  .inicio {
+    display: block;
+    position: sticky;
+    top: 0;
+  }
+  .in {
+    background-color: $color-prncipal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .menu {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  ul {
+     list-style: none; 
+    li {
+      a {
+        margin: 10px;
+      }
+    }
+  }
+  .pad {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .backim {
+    background-image: url(../img/bordo.jpg);
+    transition: all 1s;
+  
+    &:hover {
+      transform: skewX(20deg);
+    }
+  }
+  /* menu */
+  /* menu mobile */
+  .menuMobile {
+    display: none;
+  }
+  /* menu mobile */
+  /* body */
+  
+  h2 {
+    color: red;
+    background-color: $color-secundario;
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+  }
+  
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-areas:
+      "txt txt img"
+      "img2 img2 img2";
+  }
+  .uno {
+    grid-area: txt;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    padding: 40px;
+  }
+  .ord {
+    grid-area: img;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .dos {
+    border: 2px solid $color-secundario;
+    width: 240px;
+    height: 240px;
+  }
+  .bordes {
+    border: 2px solid $color-secundario;
+  }
+  .moverCentro {
+    grid-area: img2;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .reducir {
+    border: $color-secundario 2px solid;
+    border-radius: 10% / 50%;
+  }
+  .margenBox {
+    margin: 20px;
+  }
+  .box {
+    color: $color-secundario;
+    background-image: url(../img/tumblr_7dab5085af0cc870779a04f730744ea0_6016881e_2048.jpg);
+    background-size: contain;
+    border: $color-secundario 1px solid;
+    font-size: 17px;
+    margin: 20px;
+    padding: 20px;
+  }
+  /* body */
+  h3 {
+    background-color: $color-secundario;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+  }
+  .if {
+    text-align: center;
+    padding: 20px;
+  }
+  .orden {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  section {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .guia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: $txt-principal;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  .dn {
+    width: 260px;
+  }
+  .caja {
+    transition: all 1s;
+    padding: 10px;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  
+    &:hover {
+      color: rgb(92, 92, 92);
+    }
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+  footer {
+    display: flex;
+    background-color: $color-secundario;
+    border: 30px solid $color-secundario !important;
+  
+    a {
+      margin: 20px;
+      padding: 10px;
+      background-color: $color-secundario;
+    }
+  }
+  .colorear {
+    color: white;
+  
+    &:hover {
+      animation: col 2s;
+    }
+    @keyframes col {
+      10% {
+        color: red;
+      }
+      40% {
+        color: rgb(255, 72, 72);
+      }
+      60% {
+        color: rgb(255, 144, 144);
+      }
+      90% {
+        color: rgb(255, 199, 199);
+      }
+      100% {
+        color: white;
+      }
+    }
+  }
+  /* index */
+  @media screen and (max-width: 576px) {
+    /* index */
+    .inicio {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+    .menuMobile {
+      display: block;
+      height: 90px;
+    }
+    .logoMob {
+      width: 244px;
+      height: 50px;
+    }
+    .pnl {
+      display: flex;
+    }
+    .spc {
+      margin: 20px;
+    }
+    .mon {
+      color: $color-prncipal;
+      display: flex;
+      flex-direction: row;
+    }
+    h2 {
+      text-align: center;
+    }
+    .containerGrid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr;
+      grid-template-areas:
+        "txt txt"
+        "img img2";
+    }
+    .uno {
+      text-align: center;
+      padding: 10px;
+    }
+    .dos {
+      width: 150px;
+      height: 150px;
+    }
+    .bordes {
+      width: 230px;
+    }
+    .reducir {
+      display: none;
+    }
+    iframe {
+      width: 400px;
+      height: 210px;
+    }
+    .orden {
+      flex-direction: column;
+    }
+    section{
+      div {
+      margin: 10px;
+    }
+    } 
+    .guia {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  /* indesx */
+  
