@@ -418,6 +418,7 @@ h1 {
 }
 .twitt {
   grid-area: tw;
+  display: block;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -744,7 +745,7 @@ h1 {
   /* series */
   /* novedades */
   .containerNovedades {
-    grid-template-rows: repeat(0.2fr, 28);
+    grid-template-rows: repeat(0.2fr, 27g);
     grid-template-columns: 0.2fr;
     grid-template-areas:
       "not"
@@ -773,8 +774,7 @@ h1 {
       "mnd2"
       "mnd3"
       "mnd4"
-      "mnd4"
-      "tw";
+      "mnd4";
   }
   .noticias{
     margin: 5px;
@@ -839,6 +839,9 @@ h1 {
   }
   .btn-grn{
     font-size: 14px;
+  }
+  .twitt{
+    display: none;
   }
   /* novedades */
   /* peliculas */

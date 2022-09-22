@@ -1,0 +1,134 @@
+/*series*/
+.btn-cel {
+  color: aqua;
+  border-color: aqua;
+  &:hover {
+    color: $color-secundario !important;
+    border-color: #001b27 !important;
+    background-color: #198492 !important;
+  }
+}
+
+.btn-dan {
+  color: red;
+  border-color: red;
+  &:hover {
+    border-color: rgb(44, 0, 6) !important;
+    background-color: rgb(122, 8, 24) !important;
+  }
+}
+
+.btn-blk {
+  color: rgb(255, 255, 255);
+  border-color: $color-secundario;
+  &:hover {
+    border-color: $color-secundario !important;
+    background-color: $color-secundario !important;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.accblk {
+  color: white;
+  background-color: $color-principal;
+}
+
+.lisblk {
+  color: rgb(226, 226, 226) !important;
+  background-color: $color-principal !important;
+  &:hover {
+    color: rgb(184, 255, 188) !important;
+  }
+}
+
+.mrgno {
+  margin: 0;
+}
+.lishdn {
+  display: none;
+}
+.centro {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-family: map-get($map: $header, $key: font-family);
+}
+.colorear {
+  color: white;
+  &:hover {
+    animation: col 2s;
+  }
+}
+
+@keyframes col {
+  10% {
+    color: red;
+  }
+  40% {
+    color: rgb(255, 72, 72);
+  }
+  60% {
+    color: rgb(255, 144, 144);
+  }
+  90% {
+    color: rgb(255, 199, 199);
+  }
+  100% {
+    color: white;
+  }
+}
+.centrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.fondo {
+  background-image: url(../img/seriesim.jpg);
+  color: $color-secundario;
+  font-weight: bold;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  padding: 140px;
+}
+@media screen and (max-width: 576px) {
+  .fondo {
+    margin: 0;
+    padding: 90px;
+    font-size: 15px;
+  }
+  .seccionCloneWars {
+    margin: 10px;
+  }
+  .mob {
+    display: none;
+  }
+  .lishdn {
+    display: block;
+  }
+  .clone {
+    width: 400px;
+    height: 225px;
+  }
+  .seccionThebadb {
+    margin: 10px;
+  }
+  .badbatchdos {
+    width: 400px;
+    height: 225px;
+  }
+
+}
+
+/* series */
