@@ -1,0 +1,8 @@
+@mixin marpad ($mar, $pad) {
+    margin: $mar;
+    padding: $pad;
+}
+
+.seccionCloneWars{
+    @include marpad(50px, 20px)
+}

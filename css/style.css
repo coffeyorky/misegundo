@@ -1,4 +1,4 @@
-.seccionThebadb, .seccionCloneWars {
+.seccionCloneWars {
   margin: 50px;
   padding: 20px;
 }
@@ -110,6 +110,14 @@ h1 {
   padding: 10px;
 }
 
+.clone {
+  display: block;
+}
+
+.clonedos {
+  display: none;
+}
+
 .fondo {
   background-image: url(../img/seriesim.jpg);
   color: black;
@@ -122,10 +130,23 @@ h1 {
   padding: 140px;
 }
 
+.seccionThebadb {
+  margin: 50px;
+  padding: 20px;
+}
+
+.badbatchdos {
+  display: block;
+}
+
+.badbatchmob {
+  display: none;
+}
+
 @media screen and (max-width: 576px) {
   .fondo {
     margin: 0;
-    padding: 90px;
+    padding: 90px 10px 90px;
     font-size: 15px;
   }
   .seccionCloneWars {
@@ -138,15 +159,19 @@ h1 {
     display: block;
   }
   .clone {
-    width: 400px;
-    height: 225px;
+    display: none;
+  }
+  .clonedos {
+    display: block;
   }
   .seccionThebadb {
     margin: 10px;
   }
   .badbatchdos {
-    width: 400px;
-    height: 225px;
+    display: none;
+  }
+  .badbatchmob {
+    display: block;
   }
 }
 /* series */
@@ -162,8 +187,6 @@ body {
 }
 
 .logo {
-  width: 444px;
-  height: 92px;
   display: block;
 }
 
@@ -249,12 +272,20 @@ h2 {
 
 .dos {
   border: 2px solid black;
-  width: 240px;
-  height: 240px;
+  display: block;
+}
+
+.dosmob {
+  display: none;
 }
 
 .bordes {
+  display: block;
   border: 2px solid black;
+}
+
+.bordesmob {
+  display: none;
 }
 
 .moverCentro {
@@ -299,9 +330,9 @@ h3 {
 
 .orden {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
   margin: 20px;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
@@ -321,10 +352,6 @@ section div {
   text-align: center;
   padding: 20px;
   margin: 20px;
-}
-
-.dn {
-  width: 260px;
 }
 
 .caja {
@@ -396,10 +423,6 @@ footer a {
     display: block;
     height: 90px;
   }
-  .logoMob {
-    width: 244px;
-    height: 50px;
-  }
   .pnl {
     display: flex;
   }
@@ -424,11 +447,23 @@ footer a {
     padding: 10px;
   }
   .dos {
-    width: 150px;
-    height: 150px;
+    display: none;
+  }
+  .dosmob {
+    display: block;
+    border: 2px solid black;
+  }
+  .ord {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .bordes {
-    width: 230px;
+    display: none;
+  }
+  .bordesmob {
+    display: block;
+    border: 2px solid black;
   }
   .reducir {
     display: none;

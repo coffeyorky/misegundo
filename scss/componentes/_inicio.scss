@@ -8,8 +8,6 @@ body {
   background-color: $color-principal;
 }
 .logo {
-  width: 444px;
-  height: 92px;
   display: block;
 }
 /* menu */
@@ -91,11 +89,17 @@ h2 {
 }
 .dos {
   border: 2px solid $color-secundario;
-  width: 240px;
-  height: 240px;
+  display: block;
+}
+.dosmob {
+  display: none;
 }
 .bordes {
+  display: block;
   border: 2px solid $color-secundario;
+}
+.bordesmob {
+  display: none;
 }
 .moverCentro {
   grid-area: img2;
@@ -156,9 +160,6 @@ section {
   text-align: center;
   padding: 20px;
   margin: map-get($map: $header, $key: margin);
-}
-.dn {
-  width: 260px;
 }
 .caja {
   transition: all 1s;
@@ -229,10 +230,6 @@ footer {
     display: block;
     height: 90px;
   }
-  .logoMob {
-    width: 244px;
-    height: 50px;
-  }
   .pnl {
     display: flex;
   }
@@ -259,11 +256,23 @@ footer {
     padding: 10px;
   }
   .dos {
-    width: 150px;
-    height: 150px;
+    display: none;
+  }
+  .dosmob {
+    display: block;
+    border: 2px solid $color-secundario;
+  }
+  .ord {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .bordes {
-    width: 230px;
+    display: none;
+  }
+  .bordesmob {
+    display: block;
+    border: 2px solid $color-secundario;
   }
   .reducir {
     display: none;
