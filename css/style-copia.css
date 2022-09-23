@@ -294,9 +294,21 @@ h1 {
   margin: 50px;
   padding: 20px;
 }
+.clone{
+  display: block;
+}
+.clonedos{
+  display: none;
+}
 .seccionThebadb {
   margin: 50px;
   padding: 20px;
+}
+.badbatchdos{
+  display: block;
+}
+.badbatchmob{
+  display: none;
 }
 /* series */
 /* novedades */
@@ -331,9 +343,13 @@ h1 {
 .noticias {
   grid-area: not;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+}
+.esp{
+  flex-direction: column;
+  justify-content: center;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   font-size: 18px;
 }
 .seccionAndor {
@@ -581,28 +597,34 @@ h1 {
 .sbo {
   grid-area: bdat;
   margin: 30px;
+  font-size: 18px;
 }
 .cb {
   grid-area: bdat2;
   margin: 30px;
+  font-size: 18px;
 }
 .tantiss {
   grid-area: bdat3;
   margin: 30px;
+  font-size: 18px;
 }
 .qui {
   grid-area: bdat4;
   margin: 30px;
+  font-size: 18px;
 }
 .drgn {
   grid-area: bdat5;
   margin: 30px;
+  font-size: 18px;
   flex-direction: column;
   justify-content: flex-start;
 }
 .clns {
   grid-area: bdat6;
   margin: 30px;
+  font-size: 18px;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -689,8 +711,10 @@ h1 {
     padding: 10px;
   }
   .dos {
-    width: 150px;
-    height: 150px;
+    display: none;
+  }
+  .dosmob{
+    display: block;
   }
   .bordes {
     width: 230px;
@@ -704,9 +728,6 @@ h1 {
   }
   .orden {
     flex-direction: column;
-  }
-  section div {
-    margin: 10px;
   }
   .guia {
     flex-direction: column;
@@ -730,20 +751,27 @@ h1 {
     display: block;
   }
   .clone {
-    width: 400px;
-    height: 225px;
+    display: none;
+  }
+  .clonedos{
+    display: block;
   }
   .seccionThebadb {
     margin: 10px;
   }
   .badbatchdos {
-    width: 400px;
-    height: 225px;
+    display: none;
+  }
+  .badbatchmob{
+    display: block;
   }
   /* series */
   /* novedades */
   .containerNovedades {
-    grid-template-rows: repeat(0.2fr, 27g);
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-rows: repeat(0.3fr, 27g);
     grid-template-columns: 0.2fr;
     grid-template-areas:
       "not"
@@ -774,8 +802,12 @@ h1 {
       "mnd4"
       "mnd4";
   }
-  .noticias{
-    margin: 5px;
+  .esp{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 20px;
+    font-size: 15px;
   }
   .seccionBadBatch{
     justify-content: center;
@@ -787,49 +819,41 @@ h1 {
     justify-content: center;
   }
   .b {
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
   }
   .c {
     grid-area: ando3;
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
   }
   .d {
     grid-area: ando4;
-    padding: 30px;
 
   }
   .tbbs {
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
   }
   .txtt {
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
   }
   .ifrm {
     margin: 10px;
   }
  
   .toj {
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
+
   }
   .tales {
-    margin: 5px;
-    padding: 10px;
+    margin: 1px;
   }
   .ofjedi {
     margin: 10px;
   }
   .mando {
-    margin: 5px;
-    padding: 10px;
+    margin: 1px;
   }
   .mnd {
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
   }
   .mndifr {
     grid-area: mnd4;
@@ -947,39 +971,39 @@ h1 {
   .sbo {
     margin: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     flex-direction: column;
     justify-content: center;
   }
   .cb {
     margin: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     flex-direction: column;
     justify-content: center;
   }
   .tantiss {
     margin: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     flex-direction: column;
   }
   .qui {
     margin: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     flex-direction: column;
   }
   .drgn {
     margin: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     flex-direction: column;
   }
   .clns {
     margin: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     flex-direction: column;
   }
   
