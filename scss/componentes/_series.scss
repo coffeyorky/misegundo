@@ -91,6 +91,12 @@ h1 {
   justify-content: center;
   padding: 10px;
 }
+.clone{
+  display: block;
+}
+.clonedos{
+  display: none;
+}
 .fondo {
   background-image: url(../img/seriesim.jpg);
   color: $color-secundario;
@@ -102,10 +108,20 @@ h1 {
   margin: 0;
   padding: 140px;
 }
+.seccionThebadb{
+  margin: 50px;
+  padding: 20px;
+}
+.badbatchdos{
+  display: block;
+}
+.badbatchmob{
+  display: none;
+}
 @media screen and (max-width: 576px) {
   .fondo {
     margin: 0;
-    padding: 90px;
+    padding: 90px 10px 90px;
     font-size: 15px;
   }
   .seccionCloneWars {
@@ -118,15 +134,19 @@ h1 {
     display: block;
   }
   .clone {
-    width: 400px;
-    height: 225px;
+    display: none;
+  }
+  .clonedos{
+    display: block;
   }
   .seccionThebadb {
     margin: 10px;
   }
   .badbatchdos {
-    width: 400px;
-    height: 225px;
+    display: none;
+  }
+  .badbatchmob{
+    display: block;
   }
 
 }

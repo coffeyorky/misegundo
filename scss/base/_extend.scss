@@ -1,17 +1,6 @@
-%margen {
-  margin: 50px;
-  padding: 20px;
-}
 %flex {
   display: flex;
   flex-direction: row;
-}
-
-.seccionCloneWars {
-  @extend %margen;
-}
-.seccionThebadb {
-  @extend %margen;
 }
 
 .mob {
