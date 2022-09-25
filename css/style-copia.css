@@ -844,20 +844,20 @@ h1 {
 
   }
   .tales {
-    margin: 1px;
+    margin: 10px;
   }
   .ofjedi {
     margin: 10px;
   }
   .mando {
-    margin: 1px;
+    margin: 10px;
   }
   .mnd {
     margin: 10px;
   }
   .mndifr {
     grid-area: mnd4;
-    margin: 5px;
+    margin: 10px;
   }
   .btn-grn{
     font-size: 14px;
