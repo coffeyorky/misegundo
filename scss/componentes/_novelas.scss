@@ -1,0 +1,36 @@
+/* novelas */
+.car {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.novcar {
+  width: 1100px;
+  margin: 20px;
+}
+.liscrsl {
+  background-color: transparent !important;
+}
+.guiaDeLectura {
+  margin: 20px;
+}
+@media screen and (max-width: 760px){
+  .resumenLegends {
+    font-size: $txt-secundario;
+    margin: 0px;
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .novcar {
+    margin: 0;
+    padding: 0;
+  }
+  .resumenLegends {
+    font-size: $txt-secundario;
+    margin: 0px;
+    padding: 80px;
+  }
+  /* novelas */
+}

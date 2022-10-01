@@ -15,6 +15,7 @@ body {
   display: block;
   position: sticky;
   top: 0;
+  border-bottom: white 1px solid;
 }
 .in {
   background-color: $color-principal;
@@ -120,7 +121,8 @@ h2 {
   background-image: url(../img/tumblr_7dab5085af0cc870779a04f730744ea0_6016881e_2048.jpg);
   background-size: contain;
   border: $color-secundario 1px solid;
-  font-size: 17px;
+  font-size: $txt-principal;
+  font-weight: bold;
   margin: map-get($map: $header, $key: margin);
   padding: 20px;
 }
@@ -143,6 +145,12 @@ h3 {
   justify-content: space-evenly;
   padding: 20px;
 }
+.trilogiasDes {
+  display: block;
+}
+.trilogiasMob {
+  display: none;
+}
 section {
   div {
     display: flex;
@@ -154,11 +162,11 @@ section {
 .guia {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-size: $txt-principal;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   margin: map-get($map: $header, $key: margin);
 }
 .caja {
@@ -169,7 +177,10 @@ section {
     transform: scale(1.1);
   }
 }
-
+iframe{
+  width: 600px;
+  height: 400px;
+}
 a {
   color: white;
   text-decoration: map-get($map: $header, $key: decoration);
@@ -181,6 +192,22 @@ a {
 }
 p {
   font-family: map-get($map: $header, $key: font-family);
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+}
+.pnlDes{
+  background-color: black;
+  display: block;
+  display: flex;
+  align-items: flex-end;
+}
+.spcDes{
+  background-color: black;
+}
+.ico{
+  background-color: black;
 }
 footer {
   display: flex;
@@ -217,9 +244,46 @@ footer {
     }
   }
 }
-/* index */
+@media screen and (max-width: 760px){
+  .guia{
+    flex-direction: column;
+  }
+  .orden{
+    flex-direction: column;
+  }
+  .containerGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas:
+      "txt"
+      "img"
+      "img2";
+  }
+  .ord{
+    justify-content: center;
+  }
+  .moverCentro{
+    flex-direction: column;
+  }
+  iframe{
+    width: 500px;
+  }
+  .margenBox{
+    margin: 10px;
+  }
+  .box{
+    font-size: 15px;
+    margin: 0;
+  }
+  .pnlDes{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
 @media screen and (max-width: 576px) {
-  /* index */
   .inicio {
     display: none;
   }
@@ -245,15 +309,17 @@ footer {
     text-align: center;
   }
   .containerGrid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
     grid-template-areas:
-      "txt txt"
-      "img img2";
+      "txt"
+      "img"
+      "img2";
   }
   .uno {
     text-align: center;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
   }
   .dos {
     display: none;
@@ -277,9 +343,13 @@ footer {
   .reducir {
     display: none;
   }
+  .box {
+    margin: 0px;
+    padding: 10px;
+  }
   iframe {
-    width: 360px;
-    height: 210px;
+    width: 260px;
+    height: 160px;
   }
   .orden {
     flex-direction: column;
@@ -289,10 +359,19 @@ footer {
       margin: 10px;
     }
   }
+  .trilogiasDes {
+    display: none;
+  }
+  .trilogiasMob {
+    display: block;
+  }
   .guia {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .pnlDes{
+    display: none;
   }
 }
 /* index */

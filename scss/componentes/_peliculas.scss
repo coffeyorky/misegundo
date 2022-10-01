@@ -1,0 +1,83 @@
+/* peliculas */
+.menuPeliculas {
+  background-color: black;
+  margin: 30px;
+}
+.amf {
+  margin: 40px;
+  padding: 10px 40px 10px;
+}
+.thePhantomMenace {
+  display: block;
+}
+.thePhantomMenacemob {
+  display: none;
+}
+.thephantomtab{
+  display: none;
+}
+.thePhantomgif{
+  display: block;
+}
+.res {
+  margin: 20px 30px 3px;
+  padding: 10px 40px 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.phantomMenace {
+  margin: 0 30px 10px;
+  padding: 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 760px){
+  .thePhantomMenace {
+    display: none;
+  }
+  .thePhantomMenacemob {
+    display: none;
+  }
+  .thephantomtab{
+    display: block;
+  }
+  .thePhantomgif{
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .thePhantomMenace {
+    display: none;
+  }
+  .thePhantomMenacemob {
+    display: block;
+    margin: 5px;
+  }
+  .thephantomtab{
+    display: none;
+  }
+  .phantomMenace {
+    margin: 10px;
+    padding: 10px;
+  }
+  .thePhantomgif{
+    display: none;
+  }
+  .menuPeliculas {
+    margin: 5px;
+  }
+  .amf {
+    margin: 10px;
+    padding: 10px;
+  }
+  .res {
+    margin: 1px;
+  }
+
+  /* peliculas */
+}

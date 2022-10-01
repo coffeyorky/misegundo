@@ -1,0 +1,317 @@
+/* novedades */
+.btn-grn {
+  color: rgb(0, 165, 0);
+  border-color: rgb(0, 92, 0);
+}
+.btn-grn:hover {
+  border-color: rgb(10, 48, 0) !important;
+  background-color: rgb(17, 134, 17) !important;
+}
+nav{
+  ul{
+    padding: 10px;
+  }
+}
+.containerNovedades {
+  margin: 20px;
+  display: grid;
+  grid-template-rows: repeat(0.2fr, 13);
+  grid-template-columns: repeat(0.2fr, 3);
+  grid-template-areas:
+    "ando ando noti"
+    "ando2 ando3 noti"
+    "ando4 ando4 noti"
+    "ando4 ando4 noti"
+    "tbb tbb noti"
+    "tbb2 tbb3 noti"
+    "tbb4 tbb4 noti"
+    "toj toj tw"
+    "toj2 toj3 tw"
+    "toj4 toj4 tw"
+    "mnd mnd tw"
+    "mnd2 mnd3 tw"
+    "mnd4 mnd4 tw";
+}
+.noticias {
+  grid-area: noti;
+  flex-direction: column;
+  justify-content: center;
+}
+.noticDes {
+  display: block;
+}
+.noticMob {
+  display: none;
+}
+.notiTab {
+  display: none;
+}
+.esp {
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+}
+.seccionAndor {
+  grid-area: ando;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.b {
+  grid-area: ando2;
+}
+.c {
+  grid-area: ando3;
+  margin: 10px;
+  padding: 10px;
+}
+.d {
+  grid-area: ando4;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.seccionBadBatch {
+  grid-area: tbb;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.tbbs {
+  grid-area: tbb2;
+  margin: 10px;
+  padding: 10px;
+}
+.txtt {
+  grid-area: tbb3;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 10px;
+}
+.ifrm {
+  grid-area: tbb4;
+}
+.seccionTalesofjedi {
+  grid-area: toj;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.toj {
+  grid-area: toj2;
+  margin: 10px;
+  padding: 10px;
+}
+.tales {
+  grid-area: toj3;
+  margin: 10px;
+  padding: 10px;
+}
+.ofjedi {
+  grid-area: toj4;
+  margin: 20px;
+}
+.seccionThemandalorian {
+  grid-area: mnd;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.mando {
+  grid-area: mnd2;
+  margin: 10px;
+  padding: 10px;
+}
+.mnd {
+  grid-area: mnd3;
+  margin: 10px;
+}
+.mndifr {
+  grid-area: mnd4;
+}
+.twitt {
+  grid-area: tw;
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .containerNovedades {
+    display: grid;
+    grid-template-rows: repeat(0.2fr, 17);
+    grid-template-columns: repeat(0.2fr, 2);
+    grid-template-areas:
+      "noti noti"
+      "noti noti"
+      "noti noti"
+      "noti noti"
+      "ando ando"
+      "ando2 ando3"
+      "ando4 ando4"
+      "ando4 ando4"
+      "tbb tbb"
+      "tbb2 tbb3"
+      "tbb4 tbb4"
+      "toj toj"
+      "toj2 toj3"
+      "toj4 toj4"
+      "mnd mnd"
+      "mnd2 mnd3"
+      "mnd4 mnd4";
+  }
+  .twitt {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  .containerNovedades {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-rows: repeat(0.3fr, 27g);
+    grid-template-columns: 0.2fr;
+    grid-template-areas:
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "ando"
+      "ando2"
+      "ando3"
+      "ando4"
+      "tbb"
+      "tbb2"
+      "tbb3"
+      "tbb4"
+      "toj"
+      "toj"
+      "toj2"
+      "toj3"
+      "toj4"
+      "toj4"
+      "mnd"
+      "mnd"
+      "mnd2"
+      "mnd3"
+      "mnd4"
+      "mnd4";
+  }
+  .noticDes {
+    display: none;
+  }
+  .noticMob {
+    display: none;
+  }
+  .notiTab {
+    display: block;
+  }
+  .twitt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerNovedades {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-rows: repeat(0.3fr, 27g);
+    grid-template-columns: 0.2fr;
+    grid-template-areas:
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "noti"
+      "ando"
+      "ando2"
+      "ando3"
+      "ando4"
+      "tbb"
+      "tbb2"
+      "tbb3"
+      "tbb4"
+      "toj"
+      "toj"
+      "toj2"
+      "toj3"
+      "toj4"
+      "toj4"
+      "mnd"
+      "mnd"
+      "mnd2"
+      "mnd3"
+      "mnd4"
+      "mnd4";
+  }
+  .noticDes {
+    display: none;
+  }
+  .noticMob {
+    display: block;
+  }
+  .notiTab {
+    display: none;
+  }
+  .esp {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 20px;
+  }
+  .seccionBadBatch {
+    justify-content: center;
+  }
+  .seccionTalesofjedi {
+    justify-content: center;
+  }
+  .seccionThemandalorian {
+    justify-content: center;
+  }
+  .b {
+    margin: 10px;
+  }
+  .c {
+    margin: 10px;
+  }
+  .tbbs {
+    margin: 10px;
+  }
+  .txtt {
+    margin: 10px;
+    padding: 0;
+  }
+  .ifrm {
+    margin: 10px;
+  }
+
+  .toj {
+    margin: 10px;
+  }
+  .tales {
+    margin: 10px;
+    padding: 0;
+  }
+  .ofjedi {
+    margin: 10px;
+  }
+  .mando {
+    margin: 10px;
+  }
+  .mnd {
+    margin: 10px;
+  }
+  .mndifr {
+    grid-area: mnd4;
+    margin: 10px;
+  }
+  .btn-grn {
+    font-size: $txt-secundario;
+  }
+  .twitt {
+    display: none;
+  }
+  /* novedades */
+}

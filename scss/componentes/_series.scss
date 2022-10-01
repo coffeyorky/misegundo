@@ -43,12 +43,21 @@ nav {
   color: rgb(226, 226, 226) !important;
   background-color: $color-principal !important;
   &:hover {
-    color: rgb(184, 255, 188) !important;
+    color: rgb(255, 184, 184) !important;
   }
 }
 
 .mrgno {
   margin: 0;
+}
+.lisDes{
+  display: block;
+  margin: 50px;
+  padding: 20px;
+}
+.listDes{
+  margin: 50px;
+  padding: 20px;
 }
 .lishdn {
   display: none;
@@ -91,10 +100,13 @@ h1 {
   justify-content: center;
   padding: 10px;
 }
-.clone{
+.clone {
   display: block;
 }
-.clonedos{
+.clonedos {
+  display: none;
+}
+.seriesTab {
   display: none;
 }
 .fondo {
@@ -108,26 +120,31 @@ h1 {
   margin: 0;
   padding: 140px;
 }
-.seccionThebadb{
+.seccionSeries {
   margin: 50px;
   padding: 20px;
 }
-.badbatchdos{
+.seriesdos {
   display: block;
 }
-.badbatchmob{
+.seriesmob {
   display: none;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 760px) {
   .fondo {
     margin: 0;
     padding: 90px 10px 90px;
-    font-size: 15px;
+    font-size: $txt-principal;
   }
   .seccionCloneWars {
     margin: 10px;
+    padding: 10px;
   }
-  .mob {
+  .listDes{
+    margin: 10px;
+    padding: 10px;
+  }
+  .lisDes{
     display: none;
   }
   .lishdn {
@@ -136,19 +153,67 @@ h1 {
   .clone {
     display: none;
   }
-  .clonedos{
-    display: block;
-  }
-  .seccionThebadb {
-    margin: 10px;
-  }
-  .badbatchdos {
+  .clonedos {
     display: none;
   }
-  .badbatchmob{
+  .seriesdos {
+    display: none;
+  }
+  .seriesTab {
     display: block;
   }
-
+  .seccionSeries {
+    margin: 10px;
+    padding: 10px;
+  }
+  .seriesmob {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn-cel {
+    font-size: $txt-secundario;
+  }
+  .btn-dan {
+    font-size: $txt-secundario;
+  }
+  .btn-blk {
+    font-size: $txt-secundario;
+  }
+  .fondo {
+    margin: 0;
+    padding: 90px 10px 90px;
+    font-size: $txt-secundario;
+  }
+  .listDes{
+    margin: 10px;
+    padding: 10px;
+  }
+  .lisDes{
+    display: none;
+  }
+  .lishdn {
+    display: block;
+  }
+  .clone {
+    display: none;
+  }
+  .clonedos {
+    display: block;
+  }
+  .seccionSeries {
+    margin: 10px;
+    padding: 10px;
+  }
+  .seriesdos {
+    display: none;
+  }
+  .seriesmob {
+    display: block;
+  }
+  .seriesTab {
+    display: none;
+  }
 }
 
 /* series */

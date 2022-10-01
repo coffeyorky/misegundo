@@ -1,0 +1,118 @@
+/* videojuegos */
+.jds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jdsur {
+  width: 100%;
+}
+.deskopHide {
+  display: none;
+}
+.resumenVideojuegos {
+  text-align: center;
+  margin: 30px;
+  padding: 10px 50px 20px;
+}
+.juegosPrincipales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.margen {
+  margin: 20px;
+}
+.jdo {
+  display: block;
+  border-radius: 40px;
+}
+.princMob {
+  display: none;
+}
+.princTab{
+  display: none;
+}
+.roth {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: $txt-principal;
+}
+.st {
+  display: block;
+}
+@media screen and (max-width: 1200px){
+  .roth{
+    flex-wrap: wrap;
+  }
+  .jdo {
+    display: none;
+  }
+  .princMob {
+    display: none;
+  }
+  .princTab{
+    display: block;
+    border-radius: 40px;
+  }
+}
+@media screen and (max-width: 760px){
+  .roth {
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jdo {
+    display: none;
+  }
+  .princMob {
+    display: none;
+  }
+  .princTab{
+    display: block;
+    border-radius: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .jdsur {
+    display: none;
+  }
+  .deskopHide {
+    display: block;
+    width: 100%;
+  }
+  .resumenVideojuegos {
+    margin: 10px;
+    padding: 0px;
+  }
+  .jdo {
+    display: none;
+  }
+  .princMob {
+    display: block;
+    border-radius: 40px;
+  }
+  .princTab{
+    display: none;
+  }
+  .roth {
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .juegosPrincipales {
+    margin: 20px;
+  }
+  .margen {
+    margin: 20px;
+  }
+  .st {
+    display: none;
+  }
+  /* videojuegos */
+}
