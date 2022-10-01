@@ -1,0 +1,248 @@
+/* lore */
+.lor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.gridLore {
+  margin: 20px;
+  display: grid;
+  grid-template-rows: repeat(0.3fr, 7);
+  grid-template-columns: 0.2fr 0.2fr 1fr;
+  grid-template-areas:
+    "bcd bdc bdc"
+    "bdat bdat2 noti"
+    "bdat bdat2 noti2"
+    "bdat3 bdat4 noti3"
+    "bdat3 bdat4 noti4"
+    "bdat5 bdat6 noti5"
+    "lid lid noti6";
+}
+.ttxt {
+  grid-area: noti;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.notic {
+  grid-area: noti2;
+  margin: 10px;
+  padding: 10px;
+}
+.answ {
+  grid-area: noti3;
+  margin: 20px;
+  padding: 20px;
+}
+.jdls {
+  grid-area: noti4;
+  margin: 20px;
+  padding: 20px;
+}
+.aclt {
+  grid-area: noti5;
+  margin: 20px;
+  padding: 20px;
+}
+.ssv {
+  grid-area: noti6;
+  margin: 20px;
+  padding: 20px;
+}
+.bcd {
+  grid-area: bcd;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.sbo {
+  grid-area: bdat;
+  margin: 30px;
+}
+.cb {
+  grid-area: bdat2;
+  margin: 30px;
+}
+.tantiss {
+  grid-area: bdat3;
+  margin: 30px;
+}
+.qui {
+  grid-area: bdat4;
+  margin: 30px;
+}
+.drgn {
+  grid-area: bdat5;
+  margin: 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.clns {
+  grid-area: bdat6;
+  margin: 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.lis {
+  grid-area: lid;
+}
+.notictab {
+  display: none;
+}
+.col {
+  color: white;
+  background-color: rgb(31, 31, 34);
+}
+.btn-cam {
+  color: #12477c;
+  border-color: #12477c;
+}
+.btn-cam:hover {
+  color: rgb(219, 219, 219) !important;
+  border-color: #061a2e !important;
+  background-color: #0d3966 !important;
+}
+.btn-red {
+  color: rgb(194, 32, 53);
+  border-color: rgb(194, 32, 53);
+}
+.btn-red:hover {
+  color: rgb(219, 219, 219) !important;
+  border-color: rgb(77, 8, 18) !important;
+  background-color: rgb(136, 24, 39) !important;
+}
+.btn-midas {
+  color: #ffbb00ee;
+  border-color: #ca7900ee;
+}
+.btn-midas:hover {
+  color: black !important;
+  border-color: #ca7900ee !important;
+  background-color: #ffbb00ee !important;
+}
+.btn-white {
+  color: white;
+  border-color: white;
+}
+.btn-white:hover {
+  color: black !important;
+  border-color: rgb(0, 0, 0) !important;
+  background-color: white !important;
+}
+@media screen and (max-width: 1200px) {
+  .gridLore {
+    justify-content: center;
+    grid-template-rows: repeat(0.3fr, 9);
+    grid-template-columns: 0.2fr 0.2fr;
+    grid-template-areas:
+      "noti noti"
+      "noti2 noti2"
+      "noti3 noti4"
+      "noti5 noti6"
+      "bcd bcd"
+      "bdat bdat2"
+      "bdat3 bdat4"
+      "bdat5 bdat6"
+      "lid lid";
+  }
+}
+@media screen and (max-width: 760px) {
+  .gridLore {
+    margin: 10px;
+    justify-content: center;
+    grid-template-rows: repeat(0.3fr, 14);
+    grid-template-columns: 0.2fr;
+    grid-template-areas:
+      "noti"
+      "noti2"
+      "noti3"
+      "noti4"
+      "noti5"
+      "noti6"
+      "bcd"
+      "bdat"
+      "bdat2"
+      "bdat3"
+      "bdat4"
+      "bdat5"
+      "bdat6"
+      "lid";
+  }
+  .notiTab {
+    display: block;
+  }
+  .notictab {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .lor {
+    flex-wrap: wrap;
+  }
+  .btn-cam {
+    font-size: $txt-secundario;
+  }
+  .btn-red {
+    font-size: $txt-secundario;
+  }
+  .btn-midas {
+    font-size: $txt-secundario;
+  }
+  .btn-white {
+    font-size: $txt-secundario;
+  }
+  .notictab {
+    display: none;
+  }
+  .gridLore {
+    margin: 10px;
+    justify-content: center;
+    grid-template-rows: repeat(0.3fr, 14);
+    grid-template-columns: 0.2fr;
+    grid-template-areas:
+      "noti"
+      "noti2"
+      "noti3"
+      "noti4"
+      "noti5"
+      "noti6"
+      "bcd"
+      "bdat"
+      "bdat2"
+      "bdat3"
+      "bdat4"
+      "bdat5"
+      "bdat6"
+      "lid";
+  }
+  .sbo {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cb {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tantiss {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .qui {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .drgn {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .clns {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  /* lore */
+}
