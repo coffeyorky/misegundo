@@ -241,8 +241,9 @@
     padding: 10px;
     flex-direction: column;
   }
+  
 }
-  /* lore */
+/* lore */
 /* videojuegos */
 .jds {
   display: flex;
@@ -370,7 +371,7 @@
   .st {
     display: none;
   }
-
+  
 }
 /* videojuegos */
 /* novelas */
@@ -412,7 +413,7 @@
   }
 
 }
-  /* novelas */
+/* novelas */
 /* peliculas */
 .menuPeliculas {
   background-color: black;
@@ -501,8 +502,9 @@
   .res {
     margin: 1px;
   }
+
 }
-  /* peliculas */
+/* peliculas */
 /* novedades */
 .btn-grn {
   color: rgb(0, 165, 0);
@@ -756,6 +758,7 @@ nav ul {
   .twitt {
     display: none;
   }
+  
 }
 /* novedades */
 /*series*/
@@ -1222,6 +1225,23 @@ p {
 
 .ico {
   background-color: black;
+}
+
+.form {
+  margin: 20px;
+  padding: 10px 40px 10px;
+}
+
+.btn-form {
+  color: white;
+  border-color: rgb(194, 32, 53);
+  background-color: rgb(224, 36, 83);
+}
+
+.btn-form:hover {
+  color: rgb(219, 219, 219) !important;
+  border-color: rgb(77, 8, 18) !important;
+  background-color: rgb(136, 24, 39) !important;
 }
 
 footer {
