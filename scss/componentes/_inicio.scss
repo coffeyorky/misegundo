@@ -209,6 +209,20 @@ p {
 .ico{
   background-color: black;
 }
+.form{
+  margin: 20px;
+  padding: 10px 40px 10px;
+}
+.btn-form{
+  color: white;
+  border-color: rgb(194, 32, 53);
+  background-color: rgb(224, 36, 83);
+}
+.btn-form:hover{
+  color: rgb(219, 219, 219) !important;
+  border-color: rgb(77, 8, 18) !important;
+  background-color: rgb(136, 24, 39) !important;
+}
 footer {
   display: flex;
   background-color: $color-secundario;
